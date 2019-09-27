@@ -1,0 +1,91 @@
+<B><FONT COLOR='#FF0000'><!--SUMMARY_BEGIN-->
+
+<html> <!-- CCP4 HTML LOGFILE -->
+
+<hr>
+
+<pre>
+
+ 
+
+ ###############################################################
+
+ ###############################################################
+
+ ###############################################################
+
+ ### CCP4 7.0.077: convert2mtz          version 0.4 : 30/03/07##
+
+ ###############################################################
+
+ User: qxu  Run date: 27/ 9/2019 Run time: 15:18:43 
+
+
+
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+
+ as well as any specific reference in the program write-up.
+
+
+
+<!--SUMMARY_END--></FONT></B>
+
+
+
+hklin 	sad.phs
+
+mtzout 	sad.mtz
+
+colin 	F FOM PHI SIGF
+
+cell 	104.070999 104.070999 96.247002 90.000000 90.000000 120.000000
+
+spacegroup 	P 31 2 1
+
+
+
+Columns found:
+
+ 0 H H
+
+ 1 K H
+
+ 2 L H
+
+ 3 F F
+
+ 4 FOM W
+
+ 5 PHI P
+
+ 6 SIGF Q
+
+Note: these do not represent the final MTZ column types
+
+
+
+Not collecting HKL and -HKL - anomalous data will be lost.
+
+Inserting missing reflections
+
+Number of reflections input : 33618
+
+Number of reflections output: 33644
+
+
+
+<B><FONT COLOR='#FF0000'><!--SUMMARY_BEGIN-->
+
+convert2mtz: 
+
+Times: User:       0.8s System:    0.0s Elapsed:     0:01  
+
+</pre>
+
+</html>
+
+<!--SUMMARY_END--></FONT></B>

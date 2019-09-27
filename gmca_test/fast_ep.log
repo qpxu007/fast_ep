@@ -1,0 +1,63 @@
+Using 4 cpus / 8 machines
+Input:       135699_1_w0.9788-aimless-TRIMDATA.mtz
+N try:       200
+Dataset:     sad
+Columns:     I(+),SIGI(+),I(-),SIGI(-),merged
+Unit cell:   104.07 104.07 96.25 90.00 90.00 120.00
+Pointgroup:  P 31 2 1
+Resolution:  48.12 - 2.14
+Nrefl:       63910 / 30349
+DF/F:        0.089
+dI/sig(dI):  1.403
+Spacegroups: P321 P3121
+SHELXC summary:
+Dmin  <I/sig>  %comp  <d"/sig>
+11.47  100.30   96.90   5.48
+ 7.06   79.30   98.70   5.17
+ 5.31   64.10   98.50   4.21
+ 4.34   60.40   99.70   2.73
+ 3.72   47.80   99.90   1.94
+ 3.27   25.90   99.30   1.42
+ 2.94   11.70   99.90   1.04
+ 2.67    4.80   99.60   0.87
+ 2.46    2.10  100.00   0.76
+ 2.29    1.00   99.90   0.67
+ 2.14    0.30   99.60   1.03
+Anomalous limits: 2.14
+Running 10 x shelxd_mp jobs
+Spacegroup: P321
+No.  Res.   CCall  CCweak CFOM  No. found
+  3  2.14   17.10  10.11  27.20   5
+  5  2.14   21.22  12.31  33.53   7
+ 10  2.14   30.48  17.72  48.20  12
+ 20  2.14   37.33  19.71  57.04  16
+ 40  2.14   38.30  16.63  54.93  19
+Spacegroup: P3121 (best)
+No.  Res.   CCall  CCweak CFOM  No. found
+  3  2.14   35.89  23.58  59.47   5
+  5  2.14   46.23  29.36  75.59   7
+ 10  2.14   51.51  33.35  84.85   8 (best)
+ 20  2.14   51.30  31.76  83.06   8
+ 40  2.14   51.71  28.92  80.63   8
+Time: 134.49
+Best spacegroup: P3121
+Best nsites:     8
+Best resolution: 2.14 A
+Best CC / weak:  51.51 / 33.35
+Running 22 x shelxe jobs
+Solv. Orig. Inv.
+0.25 0.536 0.501
+0.30 0.561 0.512 (best)
+0.35 0.555 0.505
+0.40 0.538 0.455
+0.45 0.507 0.425
+0.50 0.479 0.378
+0.55 0.445 0.322
+0.60 0.404 0.282
+0.65 0.362 0.257
+0.70 0.327 0.236
+0.75 0.290 0.209
+Best solvent: 0.30
+Best hand:    original
+Best spacegroup: P3121
+Time: 63.98

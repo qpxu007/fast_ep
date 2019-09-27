@@ -1,0 +1,237 @@
+
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +  SHELXD 2013/2     MACROMOLECULAR DIRECT AND PATTERSON METHODS  +
+  +  Copyright(c) George M. Sheldrick 2000-2013  Multi-CPU version  +
+  +  sad_fa                     started at 15:15:26 on 27 Sep 2019  +
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  4 threads running in parallel on 24 CPUs
+
+ Read instructions and process reflection data
+ =============================================
+ SHEL  dmax  999.00   dmin   2.10
+ MIND  mdis -3.500   mdeq -0.100
+ FRES  res  2.5
+ SEED  nrand      1
+ PATS  np  100   npt    99999   nf     5
+ PSMF  pres  2.5   psfac  0.340
+ FIND  na    40   ncy      20
+ DSUL  nss    0   dss 2.030
+ TANG  ftan -0.900   fex 0.400
+ NTPR  ntpr   100
+ SKIP  min2   0.0
+ ESEL  Emin   1.500   I/sigI 0.500
+ WEED  fro  0.000
+ CCWT  g   0.010
+ WEAK  wwk   1.000
+ MAGI  wd   0.000   d1   5.200   d2   6.500
+ NCS   ncs  0   wn   5.000   tol   0.500
+ NTRY  ntry       200
+ ===============================================================================
+  12193 unique data with d > 2.15A,  mean(I/sigma) =  0.98,  mean|E^2-1| = 0.947
+   1637 E > 1.500,  average of  99.6 TPR for each phase,  <wt mean cos> = 0.565
+ ===============================================================================
+ Try      1, CPU 1, CC All/Weak 23.4 /  4.4, CFOM 27.8, best 27.8, PATFOM   0.76
+ Try      2, CPU 4, CC All/Weak 31.8 / 12.8, CFOM 44.6, best 80.6, PATFOM   0.75
+ Try      3, CPU 2, CC All/Weak 51.7 / 28.9, CFOM 80.6, best 80.6, PATFOM   1.94
+ Try      4, CPU 3, CC All/Weak 23.0 /  4.8, CFOM 27.8, best 80.6, PATFOM   0.82
+ Try      5, CPU 1, CC All/Weak 22.4 /  3.5, CFOM 25.9, best 80.6, PATFOM   0.83
+ Try      6, CPU 3, CC All/Weak 20.8 /  1.8, CFOM 22.6, best 80.6, PATFOM   1.07
+ Try      7, CPU 4, CC All/Weak 28.0 /  5.4, CFOM 33.4, best 80.6, PATFOM   0.98
+ Try      8, CPU 3, CC All/Weak 24.4 /  3.3, CFOM 27.8, best 80.6, PATFOM   1.00
+ Try      9, CPU 2, CC All/Weak 30.6 /  9.5, CFOM 40.1, best 80.6, PATFOM   1.05
+ Try     10, CPU 1, CC All/Weak 24.1 /  4.9, CFOM 29.0, best 80.6, PATFOM   0.94
+ Try     11, CPU 3, CC All/Weak 25.9 /  5.5, CFOM 31.4, best 80.6, PATFOM   0.76
+ Try     12, CPU 4, CC All/Weak 25.4 /  4.4, CFOM 29.8, best 80.6, PATFOM   0.85
+ Try     13, CPU 1, CC All/Weak 24.4 /  3.5, CFOM 27.9, best 80.6, PATFOM   0.88
+ Try     14, CPU 3, CC All/Weak 26.1 /  4.1, CFOM 30.2, best 80.6, PATFOM   0.96
+ Try     15, CPU 2, CC All/Weak 50.5 / 27.5, CFOM 78.0, best 80.6, PATFOM   1.77
+ Try     16, CPU 1, CC All/Weak 26.2 /  4.7, CFOM 30.9, best 80.6, PATFOM   0.97
+ Try     17, CPU 3, CC All/Weak 50.5 / 26.8, CFOM 77.3, best 80.6, PATFOM   1.81
+ Try     18, CPU 4, CC All/Weak 22.6 /  3.0, CFOM 25.6, best 80.6, PATFOM   1.04
+ Try     19, CPU 1, CC All/Weak 39.1 / 16.7, CFOM 55.8, best 80.6, PATFOM   1.20
+ Try     20, CPU 2, CC All/Weak 28.9 /  9.0, CFOM 37.9, best 80.6, PATFOM   1.14
+ Try     21, CPU 3, CC All/Weak 24.0 /  6.2, CFOM 30.2, best 80.6, PATFOM   0.92
+ Try     22, CPU 2, CC All/Weak 25.1 /  4.4, CFOM 29.4, best 80.6, PATFOM   0.73
+ Try     23, CPU 3, CC All/Weak 26.2 /  7.2, CFOM 33.3, best 80.6, PATFOM   1.00
+ Try     24, CPU 4, CC All/Weak 50.6 / 27.6, CFOM 78.1, best 80.6, PATFOM   1.83
+ Try     25, CPU 1, CC All/Weak 26.7 /  5.1, CFOM 31.8, best 80.6, PATFOM   1.11
+ Try     26, CPU 2, CC All/Weak 21.1 /  4.7, CFOM 25.8, best 80.6, PATFOM   0.82
+ Try     27, CPU 3, CC All/Weak 24.5 /  4.6, CFOM 29.1, best 80.6, PATFOM   0.99
+ Try     28, CPU 2, CC All/Weak 50.8 / 27.5, CFOM 78.3, best 80.6, PATFOM   1.84
+ Try     29, CPU 3, CC All/Weak 38.4 / 15.0, CFOM 53.5, best 80.6, PATFOM   1.20
+ Try     30, CPU 4, CC All/Weak 50.6 / 27.7, CFOM 78.2, best 80.6, PATFOM   1.83
+ Try     31, CPU 1, CC All/Weak 24.4 /  2.3, CFOM 26.6, best 80.6, PATFOM   0.89
+ Try     32, CPU 2, CC All/Weak 25.5 /  4.7, CFOM 30.1, best 80.6, PATFOM   0.94
+ Try     33, CPU 3, CC All/Weak 50.3 / 26.8, CFOM 77.0, best 80.6, PATFOM   1.80
+ Try     34, CPU 2, CC All/Weak 50.7 / 28.3, CFOM 79.0, best 80.6, PATFOM   1.74
+ Try     35, CPU 3, CC All/Weak 24.3 /  3.6, CFOM 27.9, best 80.6, PATFOM   0.89
+ Try     36, CPU 4, CC All/Weak 26.1 /  8.6, CFOM 34.6, best 80.6, PATFOM   0.79
+ Try     37, CPU 1, CC All/Weak 49.9 / 26.1, CFOM 76.0, best 80.6, PATFOM   1.86
+ Try     38, CPU 3, CC All/Weak 50.3 / 26.9, CFOM 77.1, best 80.6, PATFOM   1.72
+ Try     39, CPU 4, CC All/Weak 21.1 /  2.3, CFOM 23.3, best 80.6, PATFOM   0.83
+ Try     40, CPU 2, CC All/Weak 25.6 /  4.6, CFOM 30.2, best 80.6, PATFOM   1.09
+ Try     41, CPU 3, CC All/Weak 26.5 /  6.0, CFOM 32.5, best 80.6, PATFOM   1.16
+ Try     42, CPU 4, CC All/Weak 23.3 /  2.7, CFOM 26.0, best 80.6, PATFOM   0.82
+ Try     43, CPU 1, CC All/Weak 28.3 /  5.7, CFOM 34.1, best 80.6, PATFOM   1.08
+ Try     44, CPU 3, CC All/Weak 27.5 /  7.9, CFOM 35.4, best 80.6, PATFOM   0.92
+ Try     45, CPU 4, CC All/Weak 24.7 /  5.7, CFOM 30.4, best 80.6, PATFOM   0.87
+ Try     46, CPU 2, CC All/Weak 38.5 / 16.9, CFOM 55.3, best 80.6, PATFOM   1.06
+ Try     47, CPU 3, CC All/Weak 26.9 /  6.6, CFOM 33.5, best 80.6, PATFOM   0.86
+ Try     48, CPU 4, CC All/Weak 26.5 /  7.9, CFOM 34.4, best 80.6, PATFOM   0.97
+ Try     49, CPU 1, CC All/Weak 31.4 / 11.6, CFOM 43.1, best 80.6, PATFOM   0.94
+ Try     50, CPU 3, CC All/Weak 28.8 /  9.1, CFOM 37.9, best 80.6, PATFOM   0.98
+ Try     51, CPU 1, CC All/Weak 24.6 /  4.0, CFOM 28.6, best 80.6, PATFOM   1.02
+ Try     52, CPU 3, CC All/Weak 21.5 /  3.1, CFOM 24.6, best 80.6, PATFOM   0.77
+ Try     53, CPU 2, CC All/Weak 28.5 /  4.7, CFOM 33.2, best 80.6, PATFOM   0.93
+ Try     54, CPU 4, CC All/Weak 25.3 /  6.4, CFOM 31.7, best 80.6, PATFOM   0.93
+ Try     55, CPU 1, CC All/Weak 23.6 /  0.7, CFOM 24.3, best 80.6, PATFOM   1.00
+ Try     56, CPU 3, CC All/Weak 22.9 /  2.7, CFOM 25.5, best 80.6, PATFOM   0.89
+ Try     57, CPU 1, CC All/Weak 26.1 /  7.7, CFOM 33.8, best 80.6, PATFOM   0.88
+ Try     58, CPU 3, CC All/Weak 24.3 /  1.8, CFOM 26.1, best 80.6, PATFOM   0.86
+ Try     59, CPU 2, CC All/Weak 50.8 / 27.4, CFOM 78.2, best 80.6, PATFOM   1.90
+ Try     60, CPU 4, CC All/Weak 22.8 /  3.2, CFOM 26.0, best 80.6, PATFOM   1.00
+ Try     61, CPU 1, CC All/Weak 24.2 /  3.4, CFOM 27.6, best 80.6, PATFOM   0.89
+ Try     62, CPU 3, CC All/Weak 26.5 /  6.8, CFOM 33.3, best 80.6, PATFOM   1.02
+ Try     63, CPU 1, CC All/Weak 50.1 / 26.4, CFOM 76.5, best 80.6, PATFOM   1.83
+ Try     64, CPU 3, CC All/Weak 50.9 / 27.8, CFOM 78.7, best 80.6, PATFOM   1.67
+ Try     65, CPU 2, CC All/Weak 51.1 / 28.1, CFOM 79.2, best 80.6, PATFOM   1.79
+ Try     66, CPU 4, CC All/Weak 50.8 / 27.3, CFOM 78.1, best 80.6, PATFOM   1.99
+ Try     67, CPU 1, CC All/Weak 24.8 /  3.4, CFOM 28.2, best 80.6, PATFOM   0.89
+ Try     68, CPU 3, CC All/Weak 32.6 /  8.4, CFOM 41.0, best 80.6, PATFOM   1.10
+ Try     69, CPU 1, CC All/Weak 24.3 /  4.0, CFOM 28.3, best 80.6, PATFOM   0.92
+ Try     70, CPU 3, CC All/Weak 26.6 /  5.1, CFOM 31.8, best 80.6, PATFOM   1.01
+ Try     71, CPU 2, CC All/Weak 39.1 / 18.5, CFOM 57.6, best 80.6, PATFOM   1.09
+ Try     72, CPU 4, CC All/Weak 25.7 /  6.7, CFOM 32.4, best 80.6, PATFOM   0.82
+ Try     73, CPU 1, CC All/Weak 29.9 / 11.0, CFOM 40.9, best 80.6, PATFOM   1.04
+ Try     74, CPU 3, CC All/Weak 22.0 /  2.4, CFOM 24.4, best 80.6, PATFOM   1.07
+ Try     75, CPU 1, CC All/Weak 22.5 /  2.4, CFOM 25.0, best 80.6, PATFOM   1.04
+ Try     76, CPU 4, CC All/Weak 24.9 /  4.7, CFOM 29.7, best 80.6, PATFOM   1.00
+ Try     77, CPU 3, CC All/Weak 51.3 / 28.5, CFOM 79.7, best 80.6, PATFOM   1.79
+ Try     78, CPU 2, CC All/Weak 26.7 /  5.5, CFOM 32.2, best 80.6, PATFOM   1.09
+ Try     79, CPU 4, CC All/Weak 28.8 /  4.4, CFOM 33.2, best 80.6, PATFOM   0.97
+ Try     80, CPU 3, CC All/Weak 26.5 /  5.6, CFOM 32.1, best 80.6, PATFOM   0.91
+ Try     81, CPU 1, CC All/Weak 26.0 /  6.5, CFOM 32.6, best 80.6, PATFOM   1.12
+ Try     82, CPU 4, CC All/Weak 27.0 /  3.6, CFOM 30.5, best 80.6, PATFOM   0.83
+ Try     83, CPU 3, CC All/Weak 24.9 /  4.4, CFOM 29.3, best 80.6, PATFOM   0.94
+ Try     84, CPU 2, CC All/Weak 33.2 / 10.5, CFOM 43.7, best 80.6, PATFOM   0.98
+ Try     85, CPU 3, CC All/Weak 24.8 /  4.0, CFOM 28.8, best 80.6, PATFOM   1.07
+ Try     86, CPU 4, CC All/Weak 24.3 /  4.8, CFOM 29.1, best 80.6, PATFOM   1.14
+ Try     87, CPU 1, CC All/Weak 29.9 /  8.0, CFOM 37.9, best 80.6, PATFOM   1.04
+ Try     88, CPU 3, CC All/Weak 25.6 /  6.0, CFOM 31.7, best 80.6, PATFOM   0.84
+ Try     89, CPU 1, CC All/Weak 24.3 /  3.2, CFOM 27.5, best 80.6, PATFOM   0.91
+ Try     90, CPU 2, CC All/Weak 24.8 /  3.5, CFOM 28.2, best 80.6, PATFOM   0.88
+ Try     91, CPU 3, CC All/Weak 38.9 / 18.2, CFOM 57.2, best 80.6, PATFOM   1.28
+ Try     92, CPU 4, CC All/Weak 50.4 / 28.0, CFOM 78.4, best 80.6, PATFOM   1.86
+ Try     93, CPU 1, CC All/Weak 25.0 /  6.0, CFOM 30.9, best 80.6, PATFOM   0.88
+ Try     94, CPU 3, CC All/Weak 27.1 /  6.0, CFOM 33.2, best 80.6, PATFOM   0.95
+ Try     95, CPU 1, CC All/Weak 23.3 /  3.0, CFOM 26.3, best 80.6, PATFOM   0.69
+ Try     96, CPU 2, CC All/Weak 21.9 /  2.2, CFOM 24.1, best 80.6, PATFOM   0.81
+ Try     97, CPU 3, CC All/Weak 23.9 /  4.3, CFOM 28.2, best 80.6, PATFOM   1.05
+ Try     98, CPU 4, CC All/Weak 50.8 / 28.2, CFOM 79.0, best 80.6, PATFOM   1.81
+ Try     99, CPU 1, CC All/Weak 26.5 /  8.2, CFOM 34.7, best 80.6, PATFOM   1.08
+ Try    100, CPU 3, CC All/Weak 50.1 / 27.0, CFOM 77.1, best 80.6, PATFOM   1.63
+ Try    101, CPU 1, CC All/Weak 50.0 / 25.7, CFOM 75.7, best 80.6, PATFOM   1.97
+ Try    102, CPU 2, CC All/Weak 27.9 /  6.8, CFOM 34.8, best 80.6, PATFOM   1.26
+ Try    103, CPU 3, CC All/Weak 50.7 / 27.9, CFOM 78.6, best 80.6, PATFOM   1.79
+ Try    104, CPU 4, CC All/Weak 50.7 / 26.7, CFOM 77.4, best 80.6, PATFOM   1.77
+ Try    105, CPU 1, CC All/Weak 25.9 /  4.7, CFOM 30.6, best 80.6, PATFOM   0.77
+ Try    106, CPU 3, CC All/Weak 24.4 /  4.8, CFOM 29.2, best 80.6, PATFOM   1.03
+ Try    107, CPU 2, CC All/Weak 23.6 /  3.2, CFOM 26.8, best 80.6, PATFOM   0.92
+ Try    108, CPU 1, CC All/Weak 24.2 /  2.8, CFOM 27.0, best 80.6, PATFOM   0.78
+ Try    109, CPU 4, CC All/Weak 29.5 /  7.9, CFOM 37.4, best 80.6, PATFOM   0.83
+ Try    110, CPU 3, CC All/Weak 24.0 /  2.6, CFOM 26.7, best 80.6, PATFOM   0.97
+ Try    111, CPU 2, CC All/Weak 25.3 /  4.3, CFOM 29.7, best 80.6, PATFOM   1.06
+ Try    112, CPU 1, CC All/Weak 23.3 /  3.6, CFOM 26.9, best 80.6, PATFOM   0.81
+ Try    113, CPU 4, CC All/Weak 50.9 / 28.6, CFOM 79.5, best 80.6, PATFOM   1.71
+ Try    114, CPU 3, CC All/Weak 24.0 /  5.6, CFOM 29.6, best 80.6, PATFOM   0.91
+ Try    115, CPU 2, CC All/Weak 51.0 / 28.3, CFOM 79.2, best 80.6, PATFOM   1.82
+ Try    116, CPU 1, CC All/Weak 51.1 / 28.8, CFOM 79.8, best 80.6, PATFOM   1.66
+ Try    117, CPU 4, CC All/Weak 27.8 /  7.1, CFOM 34.9, best 80.6, PATFOM   0.82
+ Try    118, CPU 3, CC All/Weak 23.1 /  3.5, CFOM 26.6, best 80.6, PATFOM   1.05
+ Try    119, CPU 2, CC All/Weak 20.7 /  2.9, CFOM 23.6, best 80.6, PATFOM   0.72
+ Try    120, CPU 1, CC All/Weak 27.8 /  4.9, CFOM 32.7, best 80.6, PATFOM   0.95
+ Try    121, CPU 4, CC All/Weak 25.4 /  3.4, CFOM 28.9, best 80.6, PATFOM   0.96
+ Try    122, CPU 3, CC All/Weak 25.4 /  6.1, CFOM 31.5, best 80.6, PATFOM   0.88
+ Try    123, CPU 2, CC All/Weak 50.9 / 27.6, CFOM 78.5, best 80.6, PATFOM   1.79
+ Try    124, CPU 4, CC All/Weak 24.4 /  3.7, CFOM 28.1, best 80.6, PATFOM   1.11
+ Try    125, CPU 1, CC All/Weak 36.7 / 13.4, CFOM 50.0, best 80.6, PATFOM   1.17
+ Try    126, CPU 2, CC All/Weak 26.1 /  6.4, CFOM 32.4, best 80.6, PATFOM   0.99
+ Try    127, CPU 4, CC All/Weak 27.7 /  6.1, CFOM 33.8, best 80.6, PATFOM   1.02
+ Try    128, CPU 3, CC All/Weak 24.6 /  6.0, CFOM 30.6, best 80.6, PATFOM   0.97
+ Try    129, CPU 1, CC All/Weak 23.9 /  7.1, CFOM 31.0, best 80.6, PATFOM   0.88
+ Try    130, CPU 2, CC All/Weak 23.3 /  2.9, CFOM 26.2, best 80.6, PATFOM   1.01
+ Try    131, CPU 4, CC All/Weak 26.8 /  5.4, CFOM 32.3, best 80.6, PATFOM   1.16
+ Try    132, CPU 3, CC All/Weak 50.5 / 27.0, CFOM 77.6, best 80.6, PATFOM   1.87
+ Try    133, CPU 1, CC All/Weak 22.4 /  3.1, CFOM 25.5, best 80.6, PATFOM   0.99
+ Try    134, CPU 2, CC All/Weak 22.7 /  2.9, CFOM 25.6, best 80.6, PATFOM   0.95
+ Try    135, CPU 4, CC All/Weak 25.1 /  3.6, CFOM 28.6, best 80.6, PATFOM   0.96
+ Try    136, CPU 3, CC All/Weak 22.1 /  4.4, CFOM 26.5, best 80.6, PATFOM   0.73
+ Try    137, CPU 1, CC All/Weak 23.2 /  0.8, CFOM 24.0, best 80.6, PATFOM   1.03
+ Try    138, CPU 2, CC All/Weak 27.7 /  8.0, CFOM 35.7, best 80.6, PATFOM   0.87
+ Try    139, CPU 4, CC All/Weak 50.6 / 26.9, CFOM 77.5, best 80.6, PATFOM   1.75
+ Try    140, CPU 3, CC All/Weak 27.6 /  7.4, CFOM 34.9, best 80.6, PATFOM   1.31
+ Try    141, CPU 1, CC All/Weak 25.0 /  4.3, CFOM 29.4, best 80.6, PATFOM   1.14
+ Try    142, CPU 2, CC All/Weak 25.7 /  5.4, CFOM 31.1, best 80.6, PATFOM   0.99
+ Try    143, CPU 4, CC All/Weak 23.2 /  4.0, CFOM 27.2, best 80.6, PATFOM   1.13
+ Try    144, CPU 3, CC All/Weak 50.8 / 27.9, CFOM 78.7, best 80.6, PATFOM   1.78
+ Try    145, CPU 1, CC All/Weak 24.6 /  4.9, CFOM 29.5, best 80.6, PATFOM   0.92
+ Try    146, CPU 2, CC All/Weak 23.5 /  2.4, CFOM 26.0, best 80.6, PATFOM   0.98
+ Try    147, CPU 4, CC All/Weak 24.3 /  7.2, CFOM 31.5, best 80.6, PATFOM   0.79
+ Try    148, CPU 3, CC All/Weak 24.2 /  4.7, CFOM 28.9, best 80.6, PATFOM   0.92
+ Try    149, CPU 1, CC All/Weak 27.0 /  2.7, CFOM 29.8, best 80.6, PATFOM   1.04
+ Try    150, CPU 2, CC All/Weak 24.8 /  4.8, CFOM 29.6, best 80.6, PATFOM   0.85
+ Try    151, CPU 4, CC All/Weak 34.0 / 13.3, CFOM 47.3, best 80.6, PATFOM   1.06
+ Try    152, CPU 3, CC All/Weak 50.0 / 26.7, CFOM 76.8, best 80.6, PATFOM   1.77
+ Try    153, CPU 1, CC All/Weak 37.1 / 16.4, CFOM 53.4, best 80.6, PATFOM   1.14
+ Try    154, CPU 2, CC All/Weak 23.9 /  6.2, CFOM 30.1, best 80.6, PATFOM   0.82
+ Try    155, CPU 4, CC All/Weak 22.7 /  3.5, CFOM 26.2, best 80.6, PATFOM   0.69
+ Try    156, CPU 3, CC All/Weak 24.4 /  3.2, CFOM 27.6, best 80.6, PATFOM   0.80
+ Try    157, CPU 1, CC All/Weak 22.5 /  2.6, CFOM 25.1, best 80.6, PATFOM   0.92
+ Try    158, CPU 2, CC All/Weak 24.5 /  3.8, CFOM 28.4, best 80.6, PATFOM   0.86
+ Try    159, CPU 4, CC All/Weak 50.8 / 27.4, CFOM 78.2, best 80.6, PATFOM   1.98
+ Try    160, CPU 3, CC All/Weak 23.3 /  5.4, CFOM 28.7, best 80.6, PATFOM   0.67
+ Try    161, CPU 1, CC All/Weak 24.6 /  2.8, CFOM 27.4, best 80.6, PATFOM   0.94
+ Try    162, CPU 2, CC All/Weak 29.3 /  9.8, CFOM 39.1, best 80.6, PATFOM   0.94
+ Try    163, CPU 4, CC All/Weak 23.8 /  2.7, CFOM 26.5, best 80.6, PATFOM   0.81
+ Try    164, CPU 3, CC All/Weak 26.4 /  7.2, CFOM 33.6, best 80.6, PATFOM   1.04
+ Try    165, CPU 1, CC All/Weak 50.5 / 27.0, CFOM 77.5, best 80.6, PATFOM   1.71
+ Try    166, CPU 2, CC All/Weak 27.7 /  8.3, CFOM 36.1, best 80.6, PATFOM   0.97
+ Try    167, CPU 4, CC All/Weak 24.3 /  3.5, CFOM 27.8, best 80.6, PATFOM   0.99
+ Try    168, CPU 3, CC All/Weak 27.4 /  6.2, CFOM 33.6, best 80.6, PATFOM   0.85
+ Try    169, CPU 1, CC All/Weak 29.7 /  9.3, CFOM 39.0, best 80.6, PATFOM   1.03
+ Try    170, CPU 2, CC All/Weak 35.7 / 15.2, CFOM 50.9, best 80.6, PATFOM   1.37
+ Try    171, CPU 4, CC All/Weak 24.9 /  6.0, CFOM 30.9, best 80.6, PATFOM   1.10
+ Try    172, CPU 3, CC All/Weak 24.0 /  4.1, CFOM 28.1, best 80.6, PATFOM   1.02
+ Try    173, CPU 1, CC All/Weak 30.4 /  7.8, CFOM 38.2, best 80.6, PATFOM   0.85
+ Try    174, CPU 2, CC All/Weak 26.6 /  6.1, CFOM 32.7, best 80.6, PATFOM   0.73
+ Try    175, CPU 4, CC All/Weak 31.9 / 13.1, CFOM 44.9, best 80.6, PATFOM   0.73
+ Try    176, CPU 3, CC All/Weak 33.4 / 10.3, CFOM 43.7, best 80.6, PATFOM   0.93
+ Try    177, CPU 1, CC All/Weak 25.1 /  6.4, CFOM 31.5, best 80.6, PATFOM   1.20
+ Try    178, CPU 2, CC All/Weak 22.0 /  4.1, CFOM 26.1, best 80.6, PATFOM   0.84
+ Try    179, CPU 4, CC All/Weak 25.8 /  4.9, CFOM 30.6, best 80.6, PATFOM   1.04
+ Try    180, CPU 3, CC All/Weak 50.5 / 27.2, CFOM 77.8, best 80.6, PATFOM   1.82
+ Try    181, CPU 1, CC All/Weak 28.0 /  7.7, CFOM 35.7, best 80.6, PATFOM   0.90
+ Try    182, CPU 2, CC All/Weak 26.3 /  2.8, CFOM 29.1, best 80.6, PATFOM   0.95
+ Try    183, CPU 4, CC All/Weak 25.2 /  3.8, CFOM 29.0, best 80.6, PATFOM   0.77
+ Try    184, CPU 3, CC All/Weak 34.9 / 12.1, CFOM 47.0, best 80.6, PATFOM   1.04
+ Try    185, CPU 1, CC All/Weak 28.0 /  7.6, CFOM 35.6, best 80.6, PATFOM   1.04
+ Try    186, CPU 2, CC All/Weak 24.4 /  4.9, CFOM 29.3, best 80.6, PATFOM   0.90
+ Try    187, CPU 4, CC All/Weak 24.0 /  4.2, CFOM 28.2, best 80.6, PATFOM   0.77
+ Try    188, CPU 3, CC All/Weak 24.6 /  5.4, CFOM 29.9, best 80.6, PATFOM   0.78
+ Try    189, CPU 2, CC All/Weak 27.8 /  9.4, CFOM 37.2, best 80.6, PATFOM   0.85
+ Try    190, CPU 1, CC All/Weak 51.4 / 28.1, CFOM 79.5, best 80.6, PATFOM   1.87
+ Try    191, CPU 4, CC All/Weak 49.4 / 25.3, CFOM 74.7, best 80.6, PATFOM   1.68
+ Try    192, CPU 3, CC All/Weak 24.1 /  2.2, CFOM 26.2, best 80.6, PATFOM   0.82
+ Try    193, CPU 2, CC All/Weak 50.9 / 27.9, CFOM 78.8, best 80.6, PATFOM   1.72
+ Try    194, CPU 1, CC All/Weak 51.1 / 27.8, CFOM 79.0, best 80.6, PATFOM   1.86
+ Try    195, CPU 4, CC All/Weak 24.0 /  2.2, CFOM 26.1, best 80.6, PATFOM   0.87
+ Try    196, CPU 3, CC All/Weak 26.0 /  6.4, CFOM 32.4, best 80.6, PATFOM   1.01
+ Try    197, CPU 2, CC All/Weak 24.9 /  4.7, CFOM 29.6, best 80.6, PATFOM   0.75
+ Try    198, CPU 1, CC All/Weak 23.3 /  2.8, CFOM 26.1, best 80.6, PATFOM   1.07
+ Try    199, CPU 4, CC All/Weak 28.3 /  6.4, CFOM 34.7, best 80.6, PATFOM   1.01
+ Try    200, CPU 3, CC All/Weak 27.0 /  4.6, CFOM 31.5, best 80.6, PATFOM   1.25
+
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +  sad_fa           finished at 15:16:54   Elapsed time:        88.04 secs  +
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

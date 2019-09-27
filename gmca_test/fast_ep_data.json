@@ -1,0 +1,21 @@
+{
+    "_hklin":"135699_1_w0.9788-aimless-TRIMDATA.mtz",
+    "_trace":false,
+    "cc":51.51,
+    "inverted":false,
+    "_xml_name":null,
+    "_nsites":[
+        8
+    ],
+    "solv":0.3,
+    "_use_cluster":true,
+    "_machines":8,
+    "_spacegroup":[
+        "P3121"
+    ],
+    "nsite_real":8,
+    "cfom":84.85,
+    "_cpu":4,
+    "cc_weak":33.35,
+    "fom":0.472
+}
