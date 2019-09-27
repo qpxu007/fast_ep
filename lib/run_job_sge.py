@@ -57,7 +57,6 @@ def run_job_cluster(executable, arguments = [], stdin = [],
     '''Run a program with some command-line arguments and some input,
     then return the standard output when it is finished.'''
 
-
     if working_directory is None:
         working_directory = os.getcwd()
 
@@ -82,41 +81,42 @@ def run_job_cluster(executable, arguments = [], stdin = [],
     script.close()
 
     if timeout:
-        timeout_tokens = ['--time=%d' % timeout]
+        timeout_tokens = ['-l', 'h_rt=%d' % timeout]
     else:
         timeout_tokens = []
 
     if sge_project:
-        project_tokens = ['-J %s' % sge_project]
+        project_tokens = ['-P %s' % sge_project]
     else:
         project_tokens = []
 
-    queue = 'main'
+    queue = 'medium.q'
 
     if ncpu > 1:
         qsub_output = run_job(
-            'sbatch', timeout_tokens + project_tokens + ['--export=ALL', '--cpus-per-task=%d' % ncpu,
-                                      '--chdir=%s' % working_directory, '-p', queue,
+            'qsub', timeout_tokens + project_tokens + ['-V', '-pe', 'smp', str(ncpu),
+                                      '-l', 'release="*"',
+                                      '-cwd', '-q', queue,
                                       'FEP_%s.sh' % rs], [], working_directory)
     else:
         qsub_output = run_job(
-            'sbatch', timeout_tokens + project_tokens + ['--export=ALL', '--chdir=%s' % working_directory, '-p', queue,
+            'qsub', timeout_tokens + project_tokens + ['-V', '-cwd', '-q', queue,
                                       'FEP_%s.sh' % rs], [], working_directory)
 
-    if 'Submitted batch job' not in qsub_output[0]:
+    if 'Unable to run job' in qsub_output[0]:
         raise RuntimeError, 'error submitting job to queue'
 
 
     job_id = None
     for record in qsub_output:
-        if 'Submitted batch job' in record:
-            job_id = int(record.split()[0])
+        if 'Your job' in record:
+            job_id = int(record.split()[2])
 
     return job_id
 
 def is_cluster_job_finished(job_id):
 
-    qstat_output = run_job('squeue', arguments=['-j', job_id])
+    qstat_output = run_job('qstat')
 
     for record in qstat_output:
         if str(job_id) in record:
@@ -155,11 +155,11 @@ def setup_job_drmaa(job, executable, arguments = [], stdin = [],
     job.workingDirectory = working_directory
     job.args = [script_path]
 
-    qsub_args = ['--export=ALL',]
+    qsub_args = ['-V',]
     if timeout:
-        qsub_args += ['--time=%s' % timeout]
+        qsub_args += ['-l', 'h_rt=%s' % timeout]
     if ncpu > 1:
-        qsub_args += ['--cpus-per-task=%s' % str(ncpu)]
+        qsub_args += ['-pe', 'smp', str(ncpu)]
 
     job.nativeSpecification = ' '.join(qsub_args)
-    #job.jobCategory = 'medium'
+    job.jobCategory = 'medium'

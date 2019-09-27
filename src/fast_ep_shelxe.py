@@ -111,10 +111,10 @@ def run_shelxe_drmaa_array(wd, njobs, job_settings, timeout, sge_project):
                                                                                                      ncycle=_settings['ncycle'],
                                                                                                      hand=hand))
 
-        script.write('TASK_WORKING_DIR=WORKING_DIR_${SGE_TASK_ID}\n')
-        script.write('TASK_COMMAND=COMMAND_${SGE_TASK_ID}\n')
+        script.write('TASK_WORKING_DIR=WORKING_DIR_${SLURM_ARRAY_TASK_ID}\n')
+        script.write('TASK_COMMAND=COMMAND_${SLURM_ARRAY_TASK_ID}\n')
         script.write('cd ${!TASK_WORKING_DIR}\n')
-        script.write('${!TASK_COMMAND} > ${!TASK_WORKING_DIR}/FEP_shelxe_${SGE_TASK_ID}.out  2> ${!TASK_WORKING_DIR}/FEP_shelxe_${SGE_TASK_ID}.err')
+        script.write('${!TASK_COMMAND} > ${!TASK_WORKING_DIR}/FEP_shelxe_${SLURM_ARRAY_TASK_ID}.out  2> ${!TASK_WORKING_DIR}/FEP_shelxe_${SLURM_ARRAY_TASK_ID}.err')
 
     import drmaa
     with drmaa.Session() as session:
@@ -124,14 +124,12 @@ def run_shelxe_drmaa_array(wd, njobs, job_settings, timeout, sge_project):
         job.remoteCommand = 'sh'
         args = [script_path,]
         job.args = args
-        job.jobCategory = 'medium'
+        #job.jobCategory = 'medium'
         if sge_project:
             proj = '-P {}'.format(sge_project)
         else:
             proj = ''
-        job.nativeSpecification = '-V {proj} -l h_rt={timeout} -tc {njobs}  -o /dev/null -e /dev/null'.format(proj=proj,
-                                                                                                    timeout=timeout,
-                                                                                                    njobs=njobs)
+        job.nativeSpecification = '{proj} -o /dev/null'.format(proj=proj)
 
         job_ids = session.runBulkJobs(job, 1, len(job_settings), 1)
         session.synchronize(job_ids, drmaa.Session.TIMEOUT_WAIT_FOREVER, True)

@@ -110,10 +110,12 @@ def run_shelxd_drmaa_array(wd, nrefl, ncpu, njobs, job_settings, timeout, sge_pr
         for idx, _settings in enumerate(job_settings, start=1):
             script.write('WORKING_DIR_{idx}={wd}\n'.format(idx=idx, wd= _settings['wd']))
 
-        script.write('TASK_WORKING_DIR=WORKING_DIR_${SGE_TASK_ID}\n')
+        script.write('TASK_WORKING_DIR=WORKING_DIR_${SLURM_ARRAY_TASK_ID}\n')
         script.write('cd ${!TASK_WORKING_DIR}\n')
         script.write('shelxd -L{nrefl} sad_fa -t{ncpu} > ${{!TASK_WORKING_DIR}}/FEP_shelxd.out  2> ${{!TASK_WORKING_DIR}}/FEP_shelxd.err\n'.format(nrefl=nrefl,
                                                                  ncpu=ncpu))
+
+
 
     import drmaa
     with drmaa.Session() as session:
@@ -123,15 +125,13 @@ def run_shelxd_drmaa_array(wd, nrefl, ncpu, njobs, job_settings, timeout, sge_pr
         job.remoteCommand = 'sh'
         args = [script_path,]
         job.args = args
-        job.jobCategory = 'medium'
+        #job.jobCategory = 'medium'
         if sge_project:
-            proj = '-P {}'.format(sge_project)
+            proj = '--wckey={}'.format(sge_project)
         else:
             proj = ''
-        job.nativeSpecification = '-V {proj} -l h_rt={timeout} -pe smp {ncpu} -tc {njobs} -o /dev/null -e /dev/null'.format(proj=proj,
-                                                                                        timeout=timeout,
-                                                                                        njobs=njobs,
-                                                                                        ncpu=ncpu)
+
+        job.nativeSpecification = '{proj} --cpus-per-task={ncpu} -o /dev/null'.format(proj=proj, ncpu=ncpu)
 
         job_ids = session.runBulkJobs(job, 1, len(job_settings), 1)
         session.synchronize(job_ids, drmaa.Session.TIMEOUT_WAIT_FOREVER, True)

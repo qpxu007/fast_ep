@@ -24,7 +24,6 @@ params = {
    'legend.columnspacing': 0.5,
    'legend.scatterpoints' : 5,
    'legend.handletextpad' : 0.3,
-   'axes.labelpad': 15.0,
    'xtick.labelsize': 10,
    'ytick.labelsize': 10,
    'text.usetex': False,
